@@ -1,0 +1,25 @@
+platform :ios, '10.0'
+
+target 'Degui' do
+  
+  pod 'AFNetworking'
+  pod 'Masonry'
+  pod 'MJRefresh'
+  pod 'MMKV'
+  pod 'SDAutoLayout'
+  pod 'WCDB'
+  pod 'Ono'
+  pod 'YYKit'
+  pod "GCDWebServer", "~> 3.0"
+  pod "GCDObjC"
+  pod 'CocoaAsyncSocket'
+  
+  pod 'WebViewJavascriptBridge', '~> 6.0'
+  pod 'CocoaSecurity'
+  pod 'CocoaLumberjack'
+  
+  pod 'SDWebImage', '~> 5.0'
+  pod 'MBProgressHUD'
+  
+    
+end

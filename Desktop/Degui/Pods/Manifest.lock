@@ -1,0 +1,107 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - CocoaAsyncSocket (7.6.3)
+  - CocoaLumberjack (3.5.3):
+    - CocoaLumberjack/Core (= 3.5.3)
+  - CocoaLumberjack/Core (3.5.3)
+  - CocoaSecurity (1.2.4)
+  - GCDObjC (0.3.0)
+  - GCDWebServer (3.5.2):
+    - GCDWebServer/Core (= 3.5.2)
+  - GCDWebServer/Core (3.5.2)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.2.0)
+  - MMKV (1.0.22)
+  - Ono (2.1.2)
+  - SDAutoLayout (2.2.1)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - SQLiteRepairKit (1.2.2):
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDB (1.0.7.5):
+    - SQLiteRepairKit (~> 1.2.0)
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDBOptimizedSQLCipher (1.2.1)
+  - WebViewJavascriptBridge (6.0.3)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking
+  - CocoaAsyncSocket
+  - CocoaLumberjack
+  - CocoaSecurity
+  - GCDObjC
+  - GCDWebServer (~> 3.0)
+  - Masonry
+  - MBProgressHUD
+  - MJRefresh
+  - MMKV
+  - Ono
+  - SDAutoLayout
+  - SDWebImage (~> 5.0)
+  - WCDB
+  - WebViewJavascriptBridge (~> 6.0)
+  - YYKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+    - CocoaSecurity
+    - GCDObjC
+    - GCDWebServer
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MMKV
+    - Ono
+    - SDAutoLayout
+    - SDWebImage
+    - SQLiteRepairKit
+    - WCDB
+    - WCDBOptimizedSQLCipher
+    - WebViewJavascriptBridge
+    - YYKit
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
+  GCDObjC: 0c31898f34d8605196ac0343c65b496609d7dee6
+  GCDWebServer: ead88cd14596dd4eae4f5830b8877c87c8728990
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  MMKV: 99b05c376c0eb412b468ba1d3e6813502edeaa24
+  Ono: 26a7c1fc4df13ece7747560a1d80655807a8a000
+  SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
+  WCDB: 8e90babdeb7784c569353a4bd22a66c0a175a882
+  WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
+  WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: d02b8e185ba3740e8f31852e2e31416757e1b8f1
+
+COCOAPODS: 1.7.3

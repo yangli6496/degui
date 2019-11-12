@@ -1,0 +1,83 @@
+//
+//  PrefixHeader.pch
+//  Degui
+//
+//  Created by corlink on 2019/11/12.
+//  Copyright © 2019年 com.degugo.ucsearch. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import <YYKit/YYKit.h>
+#import <SDAutoLayout/SDAutoLayout.h>
+
+
+
+//log
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarning;
+#endif
+
+//const
+#define iPhoneX ([UIScreen mainScreen].bounds.size.height == 896.f || [UIScreen mainScreen].bounds.size.height == 812.f ? YES : NO)
+#define STATUSBAR_HEIGHT (iPhoneX ? 44 : 20)
+#define SCREEN_HEIGHT_W [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT_H [UIScreen mainScreen].bounds.size.height
+
+#define Search_Title_Img @"title"
+
+#define BKColoris @"#f3f3f3"
+#define WhitleColor @"#FFFFFF"
+
+//search
+#define GOOGLE_SEARCH_URL(places) ([NSString stringWithFormat: @"https://www.google.com/search?ie=utf-8&oe=utf-8&client=firefox-b-m&q=%@", places])
+#define GOOGLE_SUGGESTION_URL(places) ([NSString stringWithFormat: @"http://suggestqueries.google.com/complete/search?client=firefox&q=%@", places])
+
+#define BAIDU_SEARCH_URL(places) ([NSString stringWithFormat: @"https://m.baidu.com/s?from=1000969b&word=%@", places])
+#define BAIDU_SUGGESTION_URL(places) ([NSString stringWithFormat: @"https://m.baidu.com/su?action=opensearch&ie=UTF-8&from=1000969b&wd=%@", places])
+
+#define BING_SEARCH_URL(places) ([NSString stringWithFormat: @"https://www.bing.com/search?pc=MOZW&form=MOZWSB&q=%@", places])
+#define BING_SUGGESTION_URL(query,lang) ([NSString stringWithFormat: @"https://www.bing.com/osjson.aspx?query=%@&language=%@", query,lang])
+
+#define DUCK_SEARCH_URL(places) ([NSString stringWithFormat: @"https://duckduckgo.com/?q=%@&t=ffip", places])
+#define DUCK_SUGGESTION_URL(places) ([NSString stringWithFormat: @"https://ac.duckduckgo.com/ac/?type=list&q=%@", places])
+
+#define WIKI_SEARCH_URL(places) ([NSString stringWithFormat: @"https://zh.wikipedia.org/wiki/Special?search=%@&sourceid=Mozilla-search", places])
+#define WIKI_SUGGESTION_URL(places) ([NSString stringWithFormat: @"https://zh.wikipedia.org/w/api.php?action=opensearch&search=%@", places])
+
+
+//单利宏
+#define QSingletonH(name) + (instancetype)shared##name;
+
+#define QSingletonM(name) \
+static id _instance; \
+\
++ (instancetype)allocWithZone:(struct _NSZone *)zone \
+{ \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+_instance = [super allocWithZone:zone]; \
+}); \
+return _instance; \
+} \
+\
++ (instancetype)shared##name \
+{ \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+_instance = [[self alloc] init]; \
+}); \
+return _instance; \
+} \
+\
+- (id)copyWithZone:(NSZone *)zone \
+{ \
+return _instance; \
+}
+
+#endif
